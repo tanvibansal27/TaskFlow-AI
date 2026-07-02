@@ -3,9 +3,9 @@ import { useState } from "react";
 import Sidebar from "../../components/dashboard/Sidebar";
 import Navbar from "../../components/dashboard/Navbar";
 
-import ChatMessage from "../../components/AI/ChatMessage";
-import PromptCard from "../../components/AI/PromptCard";
-import ChatInput from "../../components/AI/ChatInput";
+import ChatMessage from "../../components/ai/ChatMessage";
+import PromptCard from "../../components/ai/PromptCard";
+import ChatInput from "../../components/ai/ChatInput";
 import { chatWithAI } from "../../services/aiService";
 
 import "./AI.css";
