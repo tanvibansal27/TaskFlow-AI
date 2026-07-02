@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5001/api/dashboard";
+const API = "https://taskflow-ai-9ln0.onrender.com";
 
 const getToken = () =>
   localStorage.getItem("token");
