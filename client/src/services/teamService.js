@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API = `${import.meta.env.VITE_API_URL}/api/team`;
-
+const API = "https://taskflow-ai-9ln0.onrender.com/api/team";
 // Token Helper
 const getConfig = () => {
   const user = JSON.parse(localStorage.getItem("user"));
