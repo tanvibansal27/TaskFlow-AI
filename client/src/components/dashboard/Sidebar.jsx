@@ -11,6 +11,7 @@ import {
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
+  console.log("Sidebar Open:", sidebarOpen);
   const navigate = useNavigate();
   const location = useLocation();
   const logout = () => {

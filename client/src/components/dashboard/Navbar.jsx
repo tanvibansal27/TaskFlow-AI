@@ -39,7 +39,10 @@ const loadDashboard = async () => {
     <nav className="dashboard-navbar">
       <button
   className="menu-btn"
-  onClick={() => setSidebarOpen(true)}
+  onClick={() => {
+    console.log("Clicked");
+    setSidebarOpen(true);
+  }}
 >
   <FaBars />
 </button>
