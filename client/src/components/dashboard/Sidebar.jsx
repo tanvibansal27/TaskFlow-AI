@@ -9,7 +9,8 @@ import {
   FaSignOutAlt,
 } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";
-const Sidebar = () => {
+
+const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const logout = () => {
@@ -18,8 +19,15 @@ const Sidebar = () => {
       navigate("/");
     };
   return (
-    <aside className="sidebar">
+    <>
+  {sidebarOpen && (
+    <div
+      className="sidebar-overlay"
+      onClick={() => setSidebarOpen(false)}
+    />
+  )}
 
+  <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
       <div>
 
         <div className="logo">
@@ -30,7 +38,10 @@ const Sidebar = () => {
 
           <li
             className={location.pathname === "/dashboard" ? "active" : ""}
-            onClick={() => navigate("/dashboard")}
+            onClick={() => {
+  navigate("/dashboard");
+  setSidebarOpen(false);
+}}
           >
             <FaThLarge />
             Dashboard
@@ -38,7 +49,10 @@ const Sidebar = () => {
 
           <li
             className={location.pathname === "/projects" ? "active" : ""}
-            onClick={() => navigate("/projects")}
+            onClick={() => {
+  navigate("/projects");
+  setSidebarOpen(false);
+}}
           >
             <FaFolderOpen />
             Projects
@@ -93,6 +107,8 @@ const Sidebar = () => {
       </button>
 
     </aside>
+    </>
+
   );
 };
 

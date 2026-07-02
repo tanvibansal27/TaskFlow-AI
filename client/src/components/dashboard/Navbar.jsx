@@ -3,10 +3,11 @@ import {
   FaSearch,
   FaMoon,
   FaSun,
+  FaBars,
 } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { getDashboard } from "../../services/dashboardService";
-const Navbar = () => {
+const Navbar = ({ setSidebarOpen }) => {
   const user = JSON.parse(localStorage.getItem("user"));
   const [darkMode, setDarkMode] = useState(
   localStorage.getItem("theme") === "dark"
@@ -36,7 +37,12 @@ const loadDashboard = async () => {
 };
   return (
     <nav className="dashboard-navbar">
-
+      <button
+  className="menu-btn"
+  onClick={() => setSidebarOpen(true)}
+>
+  <FaBars />
+</button>
       <div className="search-box">
         <FaSearch />
 

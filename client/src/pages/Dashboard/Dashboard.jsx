@@ -8,16 +8,20 @@ import AIWidget from "../../components/dashboard/AIWidget";
 import RecentProjects from "../../components/dashboard/RecentProjects";
 import CalendarWidget from "../../components/dashboard/CalendarWidget";
 import Activity from "../../components/dashboard/Activity";
-
+import { useState } from "react";
 const Dashboard = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div className="dashboard">
 
-      <Sidebar />
+      <Sidebar
+  sidebarOpen={sidebarOpen}
+  setSidebarOpen={setSidebarOpen}
+/>
 
       <div className="dashboard-content">
 
-        <Navbar />
+        <Navbar setSidebarOpen={setSidebarOpen} />
 
         <div className="dashboard-main">
 

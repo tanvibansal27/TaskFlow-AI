@@ -629,3 +629,51 @@ color:#15803D;
     max-width:650px;
     object-fit:contain;
 }
+.menu-btn{
+  display:none;
+}
+
+.sidebar-overlay{
+  display:none;
+}
+
+@media (max-width:768px){
+
+.menu-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:none;
+  border:none;
+  color:white;
+  font-size:22px;
+  margin-right:15px;
+}
+
+.sidebar{
+  position:fixed;
+  top:0;
+  left:-280px;
+  width:260px;
+  height:100vh;
+  transition:.3s;
+  z-index:1000;
+}
+
+.sidebar.open{
+  left:0;
+}
+
+.sidebar-overlay{
+  display:block;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.4);
+  z-index:999;
+}
+
+.dashboard-content{
+  margin-left:0;
+}
+
+}
