@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = `${import.meta.env.VITE_API_URL}/api/projects`;
+const API = "https://taskflow-ai-9ln0.onrender.com/api/projects";
 const getToken = () => {
   return localStorage.getItem("token");
 };
