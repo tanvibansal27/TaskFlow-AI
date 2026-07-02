@@ -2,10 +2,8 @@ import axios from "axios";
 
 const API = `${import.meta.env.VITE_API_URL}/api/projects`;
 const getToken = () => {
-  const user = JSON.parse(localStorage.getItem("user"));
-  return user?.token;
+  return localStorage.getItem("token");
 };
-
 export const getProjects = async () => {
   const res = await axios.get(API, {
     headers: {
