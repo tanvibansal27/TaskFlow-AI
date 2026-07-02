@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import Sidebar from "../../components/dashboard/Sidebar";
 import Navbar from "../../components/dashboard/Navbar";
 
-import MemberCard from "../../components/team/MemberCard";
-import CreateMemberModal from "../../components/team/CreateMemberModal";
+import MemberCard from "../../components/Team/MemberCard";
+import CreateMemberModal from "../../components/Team/CreateMemberModal";
 
 import {
   getMembers,
