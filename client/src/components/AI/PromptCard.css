@@ -1,0 +1,40 @@
+.prompt-card{
+
+background:white;
+border-radius:18px;
+padding:22px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+border:2px solid transparent;
+
+}
+
+.prompt-card:hover{
+
+transform:translateY(-6px);
+border-color:#6C63FF;
+
+}
+
+.prompt-icon{
+
+font-size:32px;
+margin-bottom:12px;
+
+}
+
+.prompt-card h3{
+
+margin-bottom:8px;
+font-size:18px;
+
+}
+
+.prompt-card p{
+
+color:#666;
+font-size:14px;
+line-height:1.5;
+
+}

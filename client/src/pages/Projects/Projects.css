@@ -1,0 +1,170 @@
+.projects-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:35px;
+}
+
+.projects-header h1{
+font-size:36px;
+color:#1f2937;
+margin-bottom:8px;
+}
+
+.projects-header p{
+color:#6b7280;
+}
+
+.create-btn{
+display:flex;
+align-items:center;
+gap:10px;
+padding:14px 24px;
+border:none;
+border-radius:12px;
+background:#6366f1;
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.create-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 30px rgba(99,102,241,.3);
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+}
+
+.project-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.project-icon{
+width:60px;
+height:60px;
+background:#eef2ff;
+color:#6366f1;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:16px;
+font-size:24px;
+}
+
+.priority{
+padding:8px 16px;
+border-radius:30px;
+font-size:13px;
+font-weight:600;
+}
+
+.high{
+background:#fee2e2;
+color:#dc2626;
+}
+
+.medium{
+background:#fef3c7;
+color:#d97706;
+}
+
+.low{
+background:#dcfce7;
+color:#16a34a;
+}
+
+.project-card h2{
+margin-bottom:10px;
+color:#1f2937;
+}
+
+.project-card p{
+color:#6b7280;
+margin-bottom:20px;
+line-height:1.6;
+}
+
+.project-info{
+margin-bottom:20px;
+font-size:15px;
+}
+
+.project-actions{
+display:flex;
+gap:12px;
+}
+
+.edit-btn,
+.delete-btn{
+flex:1;
+padding:12px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:8px;
+}
+
+.edit-btn{
+background:#eef2ff;
+color:#4f46e5;
+}
+
+.delete-btn{
+background:#fee2e2;
+color:#dc2626;
+}
+.project-filters{
+display:flex;
+gap:15px;
+margin-bottom:30px;
+flex-wrap:wrap;
+}
+
+.project-filters input{
+flex:1;
+padding:14px 18px;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:15px;
+outline:none;
+}
+
+.project-filters select{
+padding:14px 16px;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:15px;
+cursor:pointer;
+min-width:180px;
+outline:none;
+}
+
+.project-filters input:focus,
+.project-filters select:focus{
+border-color:#6366f1;
+}
